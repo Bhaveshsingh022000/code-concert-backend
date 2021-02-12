@@ -82,3 +82,9 @@ exports.postSignUp = (req,res,next)=>{
             next(err);
         })
 };
+
+exports.getHome = (req, res, next) => {
+    res.status(200).json({
+        status: "working",
+    });
+  };
