@@ -23,7 +23,7 @@ app.use((error, req, res, next) => {
 mongoose.connect(MONGODB_URI)
     .then(res => {
         console.log("Connected");
-        const server = app.listen(3005);
+        const server = app.listen(process.env.PORT ||3005);
         const io = require('./socket').init(server);
         io.on("connection", socket => {
             console.log("Client Connected");
