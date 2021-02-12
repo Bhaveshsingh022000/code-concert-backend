@@ -11,6 +11,9 @@ const MONGODB_URI = 'mongodb+srv://bhavesh_05:Bhavesh2017@cluster0-yuok1.mongodb
 
 app.use(cors());
 app.use(bodyParser.json());
+app.get("/",(req,res,next)=>{
+    res.send("done");
+})
 // app.use(userRoutes);
 app.use(authRoutes);
 app.use((error, req, res, next) => {
