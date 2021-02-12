@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // const userRoutes = require('./routes/routes');
-const authRoutes = require('./routes/authRoutes'); 
+const authRoutes = require('./Routes/AuthRoutes'); 
 
 const app = express();
 const MONGODB_URI = 'mongodb+srv://bhavesh_05:Bhavesh2017@cluster0-yuok1.mongodb.net/codeshare?retryWrites=true&w=majority';
